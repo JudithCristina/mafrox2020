@@ -1,0 +1,308 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+    font-size: .94vw;
+}
+header {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .container-full {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+header .link-logo {
+    margin: 0
+}
+
+header .hamb {
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+header .logo-m {
+    width: 3rem;
+    height: auto;
+    margin: .5rem;
+    position: relative;
+    left: -1rem;
+}
+
+header nav {
+    position: fixed;
+    background-color: #000;
+    width: 25%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    z-index: 2;
+    align-items: flex-end;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transform: translateX(100%);
+    transition: all .4s ease-in;
+}
+
+header a i{
+    position: fixed;
+    top: 4%;
+    right: 2%;
+}
+
+header nav.abrir {
+    transform: translateX(0%);
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    /* margin-right: 1rem; */
+    /* margin-left: 1rem; */
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+header nav a:hover {
+    color: #c7c27b;
+    text-decoration: none;
+    transform: scale(1.1)
+}
+
+header .logo-mafrox {
+    width: 12rem;
+    height: auto;
+    padding-right: 2rem;
+}
+
+  .flex-column{
+      display: flex;
+      flex-direction: column;
+      margin-top: -1.5rem;    
+      padding-right: 2rem;
+      
+  }
+  .flex-column a{
+      margin: 0.5rem;
+      font-size:1rem;
+      text-align: end;
+  }
+.container,.container-full{
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.container-full{
+	width: 100%;
+}
+
+.fila
+{
+	display: flex;
+	flex-wrap: wrap;
+	/*align-items: center;
+	align-items: flex-start;
+	align-items: flex-end;
+	*/
+	align-items: stretch;
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+.columna
+{
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.columna-50{
+    width: 50%
+}
+.w80{
+    width: 80%
+}
+.w40{
+    width: 40%
+}
+.home, .aprendiendo{
+	height: 100vh;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+}
+.home video,
+.home .image, .aprendiendo .image{
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: center;
+	   object-position: center;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center
+}
+
+.color-white{
+    color: #fff
+}
+
+.square {
+    z-index: 1;
+    width: 10rem;
+    height: auto;
+}
+.hide{
+    display: none
+}
+.show{
+    display: block
+}
+.container-enciclopedia{
+    width: 40%;
+    height: 100vh;
+    /* transform: translateY(0%); */
+    background: linear-gradient( rgba(0, 0, 0, 0.41), rgba(0, 0, 0, 0.42));
+    z-index: 1;
+    position: absolute;
+    top: 0%;
+}
+.border-all{
+    border: 1px solid #fff
+}
+.title-enciclopedia{
+    position: relative;
+    top: 12rem;
+    left: 7rem;
+    color: #B1C280;
+    display: flex;
+}
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 3%;
+    right: 2%;
+    z-index: 100;
+}
+.iconH {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-right: 1rem
+}
+
+.container-icons1 {
+    height: 24%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#contacto .box-contact{
+    background-color: rgba(0,0,0,.5);
+    padding: 2.5rem;
+    margin-bottom: .5rem;
+    display: flex
+}
+#contacto .bd-rigth{
+    border-right: 1px solid #fff;
+    padding: 1rem
+}
+
+/*desktop*/
+/* @media (min-width: 1200px) {
+	.container{
+		width: 80%;
+	}
+} */
+/*tablet hechada*/
+/* @media (max-width: 1199px) {
+	.container{
+		width: 960px;
+	}
+} */
+/*tablet parada*/
+/* @media (max-width: 991px) {
+	html{
+		font-size: 1.9vw;
+	}
+
+	.container{
+		width: 750px;
+	}
+
+	.contenedor-info {
+	    margin-bottom: 3rem;
+	}
+} */
+/*mobile*/
+@media (max-width: 767px) {
+	html{
+		font-size: 4.6vw;
+    }
+    .flex-column a{
+        margin: 0.4rem;
+        font-size:.85rem 
+    }
+    .container{
+        width: 100%
+    }
+    header .logo-m{
+        width: 1.5rem;
+        height: auto;
+        position: relative;
+        left: -2rem;
+        top: -.5rem;
+    }
+    header .hamb{
+        font-size: 1rem
+    }
+	header nav{
+        width: 63%;
+        padding-top: 4rem;
+	}
+    header .logo-mafrox{
+        width: 6rem;
+        padding-right: 0rem;
+    }
+    .flex-column{
+        padding-right: 0rem
+    }
+	header nav a{
+		font-size: .8rem;
+        margin: 1.5rem 0;
+    }
+    header a i{
+        top: 2%;
+        right: 3%;
+    }
+    .iconH{
+        font-size: 1rem;
+        margin-right: .5rem;
+    }
+}
